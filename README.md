@@ -70,7 +70,26 @@ wonder-dating-app/
 - Expo CLI: `npm install -g @expo/cli`
 - iOS Simulator (Mac) or Android Studio
 
-### Backend Setup
+### 🚀 Quick Setup (Automated)
+
+Choose the appropriate setup script for your operating system:
+
+**For Windows (Command Prompt):**
+```cmd
+setup.bat
+```
+
+**For Windows (PowerShell):**
+```powershell
+.\setup.ps1
+```
+
+**For macOS/Linux:**
+```bash
+./setup.sh
+```
+
+### Manual Backend Setup
 
 1. **Navigate to backend directory:**
    ```bash
