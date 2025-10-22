@@ -1,0 +1,54 @@
+WONDER DATING APP - QUICK SETUP COMMANDS
+==========================================
+
+PREREQUISITES:
+- Install Node.js from https://nodejs.org/ (check "Add to PATH")
+- Install Python from https://python.org/ (check "Add Python to PATH")
+- Restart Command Prompt after installing
+
+SETUP COMMANDS (run one by one):
+
+1. Check if everything is installed:
+   node --version
+   npm --version
+   python --version
+
+2. Navigate to your project folder:
+   cd C:\path\to\your\wonder-dating-app
+
+3. Backend setup:
+   cd backend
+   npm install
+   cd src\python
+   pip install -r requirements.txt
+   cd ..\..
+   copy .env.example .env
+
+4. Frontend setup:
+   cd ..
+   npm install
+   npm install -g @expo/cli
+
+5. Test backend:
+   cd backend
+   npm run dev
+   (Should see "server running on port 3000")
+   (Press Ctrl+C to stop)
+
+6. Test frontend (open new Command Prompt):
+   cd C:\path\to\your\wonder-dating-app
+   npm start
+   (Should open Expo in browser)
+
+TROUBLESHOOTING:
+- If "node is not recognized": Reinstall Node.js, restart Command Prompt
+- If "python is not recognized": Try "py" instead, or reinstall Python
+- If npm install fails: Run Command Prompt as Administrator
+- If permission errors: Run as Administrator
+
+CONFIGURATION:
+- Edit backend\.env file with your MongoDB connection string
+- Sign up for MongoDB Atlas (free): https://www.mongodb.com/atlas
+- Get OpenAI API key: https://platform.openai.com/
+
+That's it! The app should be running.

@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "Wonder",
+    "slug": "wonder-dating-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FF6B6B"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.wonderteam.wonder",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Wonder uses your location to find potential matches nearby.",
+        "NSCameraUsageDescription": "Wonder needs camera access to take profile photos and for video calls.",
+        "NSPhotoLibraryUsageDescription": "Wonder needs photo library access to select profile photos.",
+        "NSMicrophoneUsageDescription": "Wonder needs microphone access for video calls and voice messages."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FF6B6B"
+      },
+      "package": "com.wonderteam.wonder",
+      "versionCode": 1,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-location",
+      "expo-camera",
+      "expo-image-picker",
+      [
+        "expo-apple-authentication",
+        {
+          "appleTeamId": "YOUR_APPLE_TEAM_ID"
+        }
+      ]
+    ],
+    "scheme": "wonder",
+    "extra": {
+      "eas": {
+        "projectId": "your-eas-project-id"
+      }
+    },
+    "owner": "wonderteam"
+  }
+}

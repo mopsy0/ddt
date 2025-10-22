@@ -1,0 +1,96 @@
+WONDER DATING APP - START HERE
+==============================
+
+PROBLEM: "The system cannot find the path specified"
+SOLUTION: You need to find where your project files are located.
+
+STEP 1: FIND YOUR PROJECT FOLDER
+================================
+
+Option A - Use File Explorer:
+1. Press Windows key + E (opens File Explorer)
+2. Look for a folder called "wonder-dating-app" 
+3. Check these common locations:
+   - Desktop
+   - Downloads
+   - Documents
+   - C:\ drive root
+
+Option B - Search for it:
+1. Press Windows key
+2. Type: wonder-dating-app
+3. Look for the folder in search results
+
+STEP 2: GET THE CORRECT PATH
+============================
+
+1. When you find the folder, RIGHT-CLICK on it
+2. Select "Properties"
+3. Copy the "Location" path
+4. Add the folder name to the end
+
+Example: If location shows "C:\Users\John\Desktop"
+Your full path is: C:\Users\John\Desktop\wonder-dating-app
+
+STEP 3: USE THE CORRECT PATH
+============================
+
+Replace ALL instances of this:
+cd C:\path\to\your\wonder-dating-app
+
+With your actual path like:
+cd C:\Users\John\Desktop\wonder-dating-app
+
+STEP 4: VERIFY YOU'RE IN THE RIGHT PLACE
+=========================================
+
+After running the cd command, type:
+dir
+
+You should see these files/folders:
+- package.json
+- README.md  
+- AppEntry.tsx
+- backend (folder)
+- app (folder)
+
+If you see these files, you're in the right place!
+
+STEP 5: NOW RUN THE SETUP COMMANDS
+===================================
+
+cd backend
+npm install
+cd src\python
+pip install -r requirements.txt
+cd ..\..
+copy .env.example .env
+cd ..
+npm install
+npm install -g @expo/cli
+
+STILL HAVING TROUBLE?
+====================
+
+If you can't find the project folder:
+1. You might need to download/extract the project files again
+2. Make sure you extracted the ZIP file if you downloaded it
+3. Check your Downloads folder for the original files
+
+If commands still don't work:
+1. Make sure Node.js is installed (node --version)
+2. Make sure Python is installed (python --version)
+3. Run Command Prompt as Administrator
+
+NEED THE ACTUAL FILE PATH?
+=========================
+
+Try this in Command Prompt:
+cd
+dir
+cd Desktop
+dir
+cd Downloads  
+dir
+
+This will help you explore and find where your files are located.
